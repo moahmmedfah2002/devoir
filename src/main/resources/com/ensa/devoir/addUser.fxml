@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="490.0" prefWidth="309.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ensa.devoir.AddUserController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="550.0" prefWidth="648.0">
+         <children>
+            <Circle fill="WHITE" layoutX="135.0" layoutY="69.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="60.0" layoutY="117.0" prefHeight="25.0" prefWidth="42.0" text="Nom" textAlignment="CENTER" textFill="#e10a0a">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <TextField layoutX="61.0" layoutY="142.0" />
+            <TextField layoutX="61.0" layoutY="194.0" />
+            <TextField layoutX="61.0" layoutY="243.0" />
+            <Label layoutX="60.0" layoutY="167.0" text="Prenom" textAlignment="CENTER" textFill="#fc0e0e">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="223.0" text="Address" textAlignment="CENTER" textFill="#df0a0a">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="268.0" text="Phone" textFill="#e70000">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="61.0" layoutY="288.0" />
+            <TextField layoutX="61.0" layoutY="333.0" />
+            <Label layoutX="64.0" layoutY="313.0" text="Email" textFill="#f20000">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button id="log" alignment="TOP_CENTER" contentDisplay="RIGHT" layoutX="61.0" layoutY="374.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="LOG-UP" textAlignment="CENTER" textOverrun="CLIP" onAction="#onLogupclick">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Label fx:id="outputLabel">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Pane>
+   </children>
+</VBox>
