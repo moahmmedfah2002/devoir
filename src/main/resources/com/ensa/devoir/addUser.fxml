@@ -20,9 +20,9 @@
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Label>
-            <TextField layoutX="61.0" layoutY="142.0" />
-            <TextField layoutX="61.0" layoutY="194.0" />
-            <TextField layoutX="61.0" layoutY="243.0" />
+            <TextField fx:id="nom" layoutX="61.0" layoutY="142.0" />
+            <TextField fx:id="prenom" layoutX="61.0" layoutY="194.0" />
+            <TextField fx:id="address" layoutX="61.0" layoutY="243.0" />
             <Label layoutX="60.0" layoutY="167.0" text="Prenom" textAlignment="CENTER" textFill="#fc0e0e">
                <font>
                   <Font name="System Bold" size="14.0" />
@@ -38,14 +38,14 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField layoutX="61.0" layoutY="288.0" />
-            <TextField layoutX="61.0" layoutY="333.0" />
+            <TextField fx:id="phone" layoutX="61.0" layoutY="288.0" />
+            <TextField fx:id="email" layoutX="61.0" layoutY="333.0" />
             <Label layoutX="64.0" layoutY="313.0" text="Email" textFill="#f20000">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Button id="log" alignment="TOP_CENTER" contentDisplay="RIGHT" layoutX="61.0" layoutY="374.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="LOG-UP" textAlignment="CENTER" textOverrun="CLIP" onAction="#onLogupclick">
+            <Button id="log" fx:id="logup" alignment="TOP_CENTER" contentDisplay="RIGHT" layoutX="61.0" layoutY="374.0" mnemonicParsing="false" onAction="#onLogupclick" prefHeight="25.0" prefWidth="149.0" text="LOG-UP" textAlignment="CENTER" textOverrun="CLIP">
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor>

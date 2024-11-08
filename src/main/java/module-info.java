@@ -15,6 +15,8 @@ module com.ensa.devoir {
     requires spring.data.jpa;
     requires spring.context;
     requires spring.beans;
+    requires java.sql;
+    requires mysql.connector.j;
 
     opens com.ensa.devoir to javafx.fxml;
     exports com.ensa.devoir;

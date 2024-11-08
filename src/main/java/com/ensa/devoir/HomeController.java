@@ -12,12 +12,12 @@ import lombok.Data;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-@Component
+
 @Data
 public class HomeController {
 
     @FXML
-    public Stage home=new Stage() ;
+    public Stage home=new Stage();
     public Button b;
     @FXML
     private FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("home.fxml"));
